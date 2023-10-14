@@ -1,6 +1,10 @@
-export default function Home() {
-  return (
-   <div>
-   </div>
-  )
+import { HomePage } from "./homePage";
+
+function MyApp() {
+return (
+<>
+<HomePage/>
+</>
+);
 }
+export default MyApp;
