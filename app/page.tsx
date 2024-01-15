@@ -1,6 +1,23 @@
 
 export default function Home() {
   return (
-   <div>Heakaka</div>
+    <main className="relative p-x-4">
+      <section>
+
+      </section>
+      <section>
+        
+      </section>
+      <section>
+        
+      </section>
+      <section>
+        
+      </section>
+
+      <section>
+        
+      </section>
+    </main>
   )
 }

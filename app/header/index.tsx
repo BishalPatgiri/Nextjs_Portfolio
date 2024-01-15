@@ -1,11 +1,15 @@
-import React from 'react'
+import Image from "next/image"
+import logo from "../../assets/images/BrandLogoLight.png"
 
 const Header = () => {
   return (
-    <div className='flex'>
-        <h3>About Me</h3>
-        <h3>My Skills</h3>
-    </div>
+    <header className="p-4">
+      <nav>
+        <div className="rouded-full py-1">
+        <Image src={logo} alt="" width={'100'} height={100} style={{height:"48px",width:"48px",borderRadius:"50%"}} />
+        </div>
+      </nav>
+    </header>
   )
 }
 
