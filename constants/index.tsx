@@ -1,11 +1,13 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
-export const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about-me", label: "About Us" },
-    { href: "#skills", label: "Products" },
-    { href: "#contact-me", label: "Contact Us" },
+export const NavLinks = [
+    { href: "#about-me", label: "About Me" },
+    { href: "#skills", label: "Skills" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact-me", label: "Contact Me" },
+    { href: "#contribution", label: "Contributions" },
+
 ];
 
 export const shoes = [
