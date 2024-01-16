@@ -2,6 +2,8 @@ import Image from "next/image"
 import logo from "../../assets/images/BrandLogoLight.png"
 import hamburg from "../../assets/icons/hamburger.svg"
 import { NavLinks } from "@/constants"
+import Switcher from "../../components/switcher";
+
 
 const Header = () => {
   return (
@@ -21,6 +23,9 @@ const Header = () => {
             }
 
           </ul>
+        </div>
+        <div>
+        <Switcher />
         </div>
         <div className="hidden max-md:block">
         <Image src={hamburg} alt="" width={'100'} height={100} style={{height:"28px",width:"44px"}} />
