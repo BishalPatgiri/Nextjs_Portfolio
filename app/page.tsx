@@ -1,9 +1,9 @@
 
 export default function Home() {
   return (
-    <main className="relative p-x-4 dark:bg-gray-800 dark:border-gray-700">
-      <section>
-
+    <main className="p-x-4 h-screen w-90">
+      <section id="about-me">
+jhggghj
       </section>
       <section>
         
