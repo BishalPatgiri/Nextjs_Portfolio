@@ -19,7 +19,8 @@ const Header = () => {
         <div className="rouded-full py-1 hidden dark:block">
         <Image src={LogoDark} alt="" width={'100'} height={100} style={{height:"56px",width:"56px",borderRadius:"50%"}} />
         </div>
-        <div style={{fontFamily:"Open Sans"}}>
+        {/* <div style={{fontFamily:"Open Sans"}}> */}
+        <div>
           <ul className="flex justify-center align-middle gap-8 max-md:hidden md:gap-6">
             {
               NavLinks.map(ele=>(
