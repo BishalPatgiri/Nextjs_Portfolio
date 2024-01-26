@@ -10,9 +10,9 @@ const AboutMe = () => {
                 <Image src={BishalPic} alt="" width={'400'} height={600} style={{height:"100%",width:"100%",borderRadius:"50%"}} />
             </div>
             <div className='w-2/3'>
-                <p className=' font-bold text-4xl'>Hi, I am BISHAL</p>
+                <p className=' font-bold text-4xl font-mono'>Hi, I am Bishal</p>
                 <p className='mt-4'>
-                Dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.
+                A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.
                 </p>
                 <div className='flex space-x-4 mt-4'>
                   {socialMedia.map((ele,index)=>(

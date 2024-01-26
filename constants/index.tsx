@@ -1,4 +1,4 @@
-import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
+import { facebook, instagram, twitter } from "../assets/icons";
 
 export const NavLinks = [
     { href: "#about-me", label: "About Me" },
