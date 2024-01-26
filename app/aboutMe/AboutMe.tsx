@@ -10,7 +10,8 @@ const AboutMe = () => {
                 <Image src={BishalPic} alt="" width={'400'} height={600} style={{height:"100%",width:"100%",borderRadius:"50%"}} />
             </div>
             <div className='w-2/3'>
-                <p>
+                <p className=' font-bold text-4xl'>Hi, I am BISHAL</p>
+                <p className='mt-4'>
                 Dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.
                 </p>
                 <div className='flex space-x-4 mt-4'>
@@ -21,7 +22,7 @@ const AboutMe = () => {
                   ))}
                 </div>
                 <div className='mt-4'>
-                  <button className='px-4 border-2 border-gray-600 rounded-sm'>
+                  <button className='px-4 border-2 border-gray-600 rounded-sm  shadow-lg'>
                     RESUME
                   </button>
                 </div>
