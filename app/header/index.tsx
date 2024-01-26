@@ -11,7 +11,7 @@ const Header = () => {
   const [isDarkMode, setDarkMode] = useState(false);
 
   return (
-    <header className="sticky top-0 left-0 right-0 px-16 text-[#0E1B18] border-black shadow-md mx-1 rounded-md max-lg:px-4 bg-white dark:bg-[#0E1B1B] dark:text-white dark:shadow-slate-800">
+    <header className="sticky top-0 left-0 right-0 px-16 text-[#0E1B18] font-bold border-black shadow-md rounded-md max-lg:px-4 bg-white dark:bg-[#0E1B1B] dark:text-white dark:shadow-slate-600">
       <nav className=" flex justify-between items-center border-gray-500">
         <div className="rouded-full py-1 dark:hidden">
         <Image src={LogoLight} alt="" width={'100'} height={100} style={{height:"56px",width:"56px",borderRadius:"50%"}} />
@@ -19,7 +19,6 @@ const Header = () => {
         <div className="rouded-full py-1 hidden dark:block">
         <Image src={LogoDark} alt="" width={'100'} height={100} style={{height:"56px",width:"56px",borderRadius:"50%"}} />
         </div>
-        {/* <div style={{fontFamily:"Open Sans"}}> */}
         <div>
           <ul className="flex justify-center align-middle gap-8 max-md:hidden md:gap-6">
             {
