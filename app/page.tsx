@@ -1,5 +1,5 @@
 import AboutMe from "./aboutMe/AboutMe";
-import Skills from "./skills";
+import SkillsDiv from "./skills";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
           <AboutMe/>
       </section>
       <section>
-        <Skills/>
+        <SkillsDiv/>
       </section>
       <section>
         
