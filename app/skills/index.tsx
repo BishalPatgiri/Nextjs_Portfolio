@@ -14,7 +14,7 @@ const SkillsDiv = () => {
             <div key={index} className="p-6 flex flex-col justify-center align-middle text-center">
                 <FontAwesomeIcon icon={ele.src} className="h-16" />
                 <p>{ele.text}</p>
-                <div className="h-1 bg-[#0E1B18] dark:bg-gray-300"></div>
+                <div className="h-1 bg-[#0E1B18] dark:bg-gray-400"></div>
             </div>
         ))}
       </div>
