@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image"
 import LogoLight from "../../assets/images/BrandLogoLight.png"
 import LogoDark from "../../assets/images/BrandLogoDark.jpg"
@@ -9,6 +9,21 @@ import Switcher from "../../components/switcher";
 
 const Header = () => {
   const [isDarkMode, setDarkMode] = useState(false);
+  const toggleMode=()=>{
+    setDarkMode(true)
+  }
+
+  const [sticky, setSticky] = useState(false);
+  const handleStickyNavbar = () => {
+    if (window.scrollY >= 80) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleStickyNavbar);
+  });
 
   return (
     <header className="sticky top-0 left-0 right-0 px-16 text-[#0E1B18] font-bold border-black shadow-md rounded-md max-lg:px-4 bg-white dark:bg-[#0E1B1B] dark:text-white dark:shadow-slate-600">
@@ -29,7 +44,7 @@ const Header = () => {
               ))
             }
             <li>
-                    <Switcher isDarkMode={isDarkMode} setDarkMode={setDarkMode}/>
+                    <Switcher />
             </li>
 
 
