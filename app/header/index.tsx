@@ -35,7 +35,7 @@ const Header = () => {
         <Image src={LogoDark} alt="" width={'100'} height={100} style={{height:"56px",width:"56px",borderRadius:"50%"}} />
         </div>
         <div>
-          <ul className="flex justify-center align-middle gap-8 max-md:hidden md:gap-6">
+          <ul className="flex justify-center items-center align-middle gap-8 max-md:hidden md:gap-6">
             {
               NavLinks.map(ele=>(
                 <li key={ele.label}>
