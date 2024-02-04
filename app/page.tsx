@@ -7,17 +7,17 @@ export default function Home() {
       <section id="about-me">
           <AboutMe/>
       </section>
-      <section>
+      <section id="skills">
         <SkillsDiv/>
       </section>
-      <section>
+      <section id="projects">
         
       </section>
-      <section>
+      <section id="contact-me">
         
       </section>
 
-      <section>
+      <section id="contribution">
         
       </section>
     </main>
