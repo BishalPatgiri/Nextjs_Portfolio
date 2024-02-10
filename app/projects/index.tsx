@@ -1,4 +1,7 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
+import { ProjectsList } from '@/constants'
+
 
 const Projects = () => {
   return (
@@ -6,7 +9,18 @@ const Projects = () => {
         <div>
             <p className="font-bold text-2xl">PROJECTS</p>
             <div>
+                {
+                    ProjectsList.map(ele=>(
+                        <ProjectCard
+                        image={ele.image}
+                        git={ele.git}
+                        text={ele.text}
+                        deployed={ele.deployed}
+                        title={ele.title}
+                         />
+                    ))
                 
+                }
             </div>
         </div>
     </div>

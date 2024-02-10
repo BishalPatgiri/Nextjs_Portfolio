@@ -1,10 +1,18 @@
 import React from 'react'
+import Image from "next/image"
+interface InputData{
+    image:string
+    git:string
+    text:string
+    deployed:string
+    title:string
+}
 
-const ProjectCard = ({src,title,desp,link}) => {
+const ProjectCard = ({image,git,text,deployed,title}:InputData) => {
   return (
     <div>
         <div>
-            <Image height="" width="" src={src} alt={title}/>
+            <Image height="400" width="400" src={image} alt={title}/>
         </div>
         <div>
             <h2>{title}</h2>

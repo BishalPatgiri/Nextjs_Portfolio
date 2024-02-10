@@ -9,10 +9,10 @@ export default function Home() {
           <AboutMe/>
       </section>
       <section id="skills">
-        <SkillsDiv/>
+          <SkillsDiv/>
       </section>
       <section id="projects">
-        <Projects/>
+          <Projects/>
       </section>
       <section id="contact-me">
         
