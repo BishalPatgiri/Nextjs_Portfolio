@@ -47,3 +47,14 @@ export const SocialMedia = [
   { src: faTelegram, alt: "Telegram logo" },
 
 ];
+
+export const Projects=[
+  {image:"ImageLink",git:"GithubLink",text:"Description 1",deployed:"",title:"Project 1"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 2",deployed:"",title:"Project 2"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 3",deployed:"",title:"Project 3"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 4",deployed:"",title:"Project 4"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 5",deployed:"",title:"Project 5"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 6",deployed:"",title:"Project 6"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 7",deployed:"",title:"Project 7"},
+  {image:"ImageLink",git:"GithubLink",text:"Description 8",deployed:"",title:"Project 8"},
+]

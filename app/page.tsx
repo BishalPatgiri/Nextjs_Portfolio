@@ -1,4 +1,5 @@
 import AboutMe from "./aboutMe/AboutMe";
+import Projects from "./projects";
 import SkillsDiv from "./skills";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <SkillsDiv/>
       </section>
       <section id="projects">
-        
+        <Projects/>
       </section>
       <section id="contact-me">
         
