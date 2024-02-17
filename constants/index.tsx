@@ -50,10 +50,10 @@ export const ProjectsList = [
   {
     image:
       "https://user-images.githubusercontent.com/103960628/193427517-21406fb5-b47e-430e-a1c9-000ff89e303e.png",
-    git: "GithubLink",
-    text: "Description 1",
-    deployed: "",
-    title: "Project 1",
+    git: "https://github.com/BishalPatgiri/Toggl-Track-Clone",
+    text: "Toggl Track is a time tracking and project management website. We have cloned this website within 5 days where we used ReactJS, Css, ExpressJS, NodeJS and MongoDB to create the whole Frontend and the Backend. We deployed the website on Netlify",
+    deployed: "https://clone-toggl-track.netlify.app/",
+    title: "toggl.com Clone",
   },
   // {image:"ImageLink",git:"GithubLink",text:"Description 2",deployed:"",title:"Project 2"},
   // {image:"ImageLink",git:"GithubLink",text:"Description 3",deployed:"",title:"Project 3"},
