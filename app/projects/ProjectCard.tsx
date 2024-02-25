@@ -15,12 +15,18 @@ interface InputData {
 
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
-    <div className="w-1/3">
+    <div className="w-1/3 text-center">
       <div>
-        <Image height="400" width="400" src={image} alt={title} />
+        <Image
+          height="400"
+          width="400"
+          src={image}
+          alt={title}
+          className="h-[250px]:"
+        />
       </div>
       <div>
-        <p className="">{title}</p>
+        <p className="font-bold">{title}</p>
         <p>{text}</p>
         <div className="flex gap-x-6">
           <div>
