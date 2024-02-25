@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="page-height">
       <div>
         <p className="font-bold text-2xl">PROJECTS</p>
-        <div className="mt-8">
+        <div className="mt-8 flex justify-between align-middle flex-wrapt">
           {ProjectsList.map((ele) => (
             <ProjectCard
               image={ele.image}

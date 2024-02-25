@@ -55,11 +55,29 @@ export const ProjectsList = [
     deployed: "https://clone-toggl-track.netlify.app/",
     title: "toggl.com Clone",
   },
-  // {image:"ImageLink",git:"GithubLink",text:"Description 2",deployed:"",title:"Project 2"},
-  // {image:"ImageLink",git:"GithubLink",text:"Description 3",deployed:"",title:"Project 3"},
-  // {image:"ImageLink",git:"GithubLink",text:"Description 4",deployed:"",title:"Project 4"},
+  {
+    image:
+      "https://user-images.githubusercontent.com/103960628/201537925-e145ca3b-6b69-449a-a3b4-549577dbbe38.png",
+    git: "https://github.com/BishalPatgiri/Geekbuying-E-Commerce",
+    text: "Geekbuying is also an E-Commerce website for electronic products. This website has all the small and big electronic machines that we need in our daily life.",
+    deployed: "https://geekbuying-clone-app.netlify.app/",
+    title: "geekbuying.com Clone",
+  },
+  {
+    image:
+      "https://user-images.githubusercontent.com/104014308/188278962-d6006f9a-c3d7-49f8-b2ec-2c560440f941.JPG",
+    git: "https://github.com/BishalPatgiri/Clone-of-Booking.com",
+    text: "This is an ticket booking website. We have done this project in a group. We have used ReactJS, Redux and Restfull apis to do different tasks in this project.",
+    deployed: "https://booking-com-clone.netlify.app/",
+    title: "booking.com Clone",
+  },
+  {
+    image:
+      "https://user-images.githubusercontent.com/103960628/198090451-5338ca63-2ed5-4160-ac99-04b0adae18c9.png",
+    git: "https://github.com/BishalPatgiri/Naturesbasket-Clone",
+    text: "Naturesbasket is an E-Commerce website where all the natural Groceries are available online.",
+    deployed: "https://naturesbasket-clone.netlify.app/",
+    title: "Netures Busket website Clone",
+  },
   // {image:"ImageLink",git:"GithubLink",text:"Description 5",deployed:"",title:"Project 5"},
-  // {image:"ImageLink",git:"GithubLink",text:"Description 6",deployed:"",title:"Project 6"},
-  // {image:"ImageLink",git:"GithubLink",text:"Description 7",deployed:"",title:"Project 7"},
-  // {image:"ImageLink",git:"GithubLink",text:"Description 8",deployed:"",title:"Project 8"},
 ];

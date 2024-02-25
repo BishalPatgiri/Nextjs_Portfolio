@@ -15,7 +15,7 @@ interface InputData {
 
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
-    <div className="w-1/3 text-center">
+    <div className="w-1/2 text-center p-4 shadow-lg justify-center">
       <div>
         <Image
           height="400"
@@ -31,12 +31,12 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
         <div className="flex gap-x-6">
           <div>
             <Link href={git}>
-              <FontAwesomeIcon icon={faGithub} className="h-6" />
+              <FontAwesomeIcon icon={faGithub} className="h-5" />
             </Link>
           </div>
           <div>
-            <Link href={git}>
-              <FontAwesomeIcon icon={faLink} className="h-6" />
+            <Link href={deployed}>
+              <FontAwesomeIcon icon={faLink} className="h-5" />
             </Link>
           </div>
         </div>
