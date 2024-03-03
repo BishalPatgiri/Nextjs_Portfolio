@@ -4,10 +4,10 @@ import { ProjectsList } from "@/constants";
 
 const Projects = () => {
   return (
-    <div className="page-height">
+    <div className="h-max">
       <div>
         <p className="font-bold text-2xl">PROJECTS</p>
-        <div className="mt-8 flex justify-between align-middle flex-wrapt">
+        <div className="mt-8 flex justify-between align-middle flex-wrap">
           {ProjectsList.map((ele) => (
             <ProjectCard
               image={ele.image}

@@ -1,4 +1,5 @@
 import AboutMe from "./aboutMe/AboutMe";
+import Certifications from "./certifications";
 import Projects from "./projects";
 import SkillsDiv from "./skills";
 
@@ -20,6 +21,9 @@ export default function Home() {
 
       <section id="contribution">
         
+      </section>
+      <section id="certifications">
+        <Certifications/>
       </section>
     </main>
   )
