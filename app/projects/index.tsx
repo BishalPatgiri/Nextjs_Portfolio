@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="h-max">
       <div>
         <p className="font-bold text-2xl">PROJECTS</p>
-        <div className="mt-8 flex justify-between align-middle flex-wrap">
+        <div className="mt-8 flex justify-between align-middle flex-wrap gap-4">
           {ProjectsList.map((ele) => (
             <ProjectCard
               image={ele.image}
