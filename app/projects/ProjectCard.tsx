@@ -25,10 +25,10 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
           className="h-[250px]:"
         />
       </div>
-      <div>
+      <div className="mt-4">
         <p className="font-bold">{title}</p>
         <p>{text}</p>
-        <div className="flex gap-x-6">
+        <div className="flex justify-between mt-4">
           <div>
             <Link href={git}>
               <FontAwesomeIcon icon={faGithub} className="h-5" />
