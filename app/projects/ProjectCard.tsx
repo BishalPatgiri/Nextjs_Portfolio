@@ -15,7 +15,7 @@ interface InputData {
 
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
-    <div className="w-5/12 text-center p-8 shadow-lg justify-center shadow-slate-600">
+    <div className="w-5/12 text-center p-8 shadow-lg justify-center border border-slate-600 rounded-md backdrop-brightness-110">
       <div>
         <Image
           height="400"
