@@ -26,12 +26,6 @@ const Header = () => {
   });
 
   return (
-    // <header className={`header left-0 top-0 z-40 flex w-full items-center px-16 text-[#0E1B18] font-bold border-black shadow-md rounded-md max-lg:px-4 bg-white ${
-    //   sticky
-    //     ? "dark:bg-[#0E1B1B] dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-    //     : "absolute bg-transparent"
-    // }`}>
-
     <header className="header sticky top-0 left-0 right-0 px-16 z-40 text-[#0E1B18] font-bold border-black shadow-md rounded-md max-lg:px-4 bg-white !bg-opacity-90 dark:bg-[#0E1B1B] dark:text-white dark:shadow-slate-600">
       <nav className=" flex justify-between items-center border-gray-500">
         <div className="rouded-full py-1 dark:hidden">
