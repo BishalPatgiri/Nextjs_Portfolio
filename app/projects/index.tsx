@@ -4,7 +4,7 @@ import { ProjectsList } from "@/constants";
 
 const Projects = () => {
   return (
-    <div className="h-max">
+    <div className="h-full pt-10">
       <div>
         <p className="font-bold text-2xl">PROJECTS</p>
         <div className="mt-8 flex justify-between align-middle flex-wrap gap-4">

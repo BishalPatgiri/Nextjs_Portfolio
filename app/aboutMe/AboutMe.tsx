@@ -6,14 +6,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutMe = () => {
   return (
-    <div className="pt-16 h-[100vh] flex align-middle items-center gap-x-20 max-md:gap-x-10 max-sm:gap-x-6">
+    <div className="h-full flex align-middle items-center gap-x-20 max-md:gap-x-10 max-sm:gap-x-6">
       <div className="h-2/3 w-1/3 max-lg:h-1/2 max-md:h-2/5 max-sm:h-1/3">
         <Image
           src={BishalPic}
           alt=""
           width={"400"}
           height={600}
-          style={{ height: "96%", width: "100%", borderRadius: "50%" }}
+          style={{ height: "100%", width: "100%", borderRadius: "50%" }}
         />
       </div>
       <div className="w-2/3">
