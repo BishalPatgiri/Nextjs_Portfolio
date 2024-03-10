@@ -79,5 +79,11 @@ export const ProjectsList = [
     deployed: "https://naturesbasket-clone.netlify.app/",
     title: "Netures Busket website Clone",
   },
-  // {image:"ImageLink",git:"GithubLink",text:"Description 5",deployed:"",title:"Project 5"},
+];
+
+export const certificates = [
+  { name: "", recognizedBy: "", imageUrl: "", link: "" },
+  { name: "", recognizedBy: "", imageUrl: "", link: "" },
+  { name: "", recognizedBy: "", imageUrl: "", link: "" },
+  { name: "", recognizedBy: "", imageUrl: "", link: "" },
 ];
