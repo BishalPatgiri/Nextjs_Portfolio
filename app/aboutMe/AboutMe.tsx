@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import BishalPic from "../../assets/images/Bishal.jpg";
-import { SocialMedia } from "@/constants";
+import { SocialMedia, aboutMe } from "@/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const AboutMe = () => {
@@ -19,14 +19,7 @@ const AboutMe = () => {
       <div className="w-2/3">
         <p className=" font-bold text-4xl font-mono">Hi, I am Bishal</p>
         <p className="mt-4">
-          A dynamic Full Stack Developer with a flair for innovation and a
-          dedicated towards work. I bring a blend of passion and expertise to
-          drive holistic development, actively contributing to key solutions
-          using microservices architecture. A collaborative team player, I
-          thrive in accelerating development through active participation.
-          Always at the forefront of tech trends, I ensure every platform I
-          built remains cutting-edge. Love to code. Elevate your team with a
-          developer dedicated to excellence and innovation.
+          {aboutMe}
         </p>
         <div className="flex space-x-4 mt-4">
           {SocialMedia.map((ele, index) => (

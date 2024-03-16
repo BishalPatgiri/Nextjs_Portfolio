@@ -16,7 +16,6 @@ export default function Home() {
         <Projects />
       </section>
       <section id="contact-me"></section>
-
       <section id="contribution"></section>
       <section id="certifications">
         <Certifications />
