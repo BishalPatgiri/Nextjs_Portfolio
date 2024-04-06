@@ -16,14 +16,16 @@ import {
   faYarn,
 } from "@fortawesome/free-brands-svg-icons";
 
-export const aboutMe="A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation."
+export const aboutMe =
+  "A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.";
 
 export const NavLinks = [
   { href: "#about-me", label: "About Me" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#contact-me", label: "Contact Me" },
+  { href: "#certifications", label: "Certifications" },
   { href: "#contribution", label: "Contributions" },
+  { href: "#contact-me", label: "Contact Me" },
 ];
 
 export const Skills = [
