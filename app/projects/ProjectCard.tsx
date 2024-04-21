@@ -15,20 +15,16 @@ interface InputData {
 
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
-    <div className="w-5/12 text-center p-8 shadow-lg justify-center border border-slate-600 rounded-md backdrop-brightness-110">
-      <div>
+      <div className="flex text-center p-8 shadow-lg justify-center border border-slate-600 rounded-md backdrop-brightness-110 h-96">
+      <div className="w-1/3">
         <Image
           height="400"
           width="400"
           src={image}
           alt={title}
-          className="h-[250px]:"
+          className="h-4/5 w-full"
         />
-      </div>
-      <div className="mt-4">
-        <p className="font-bold">{title}</p>
-        <p>{text}</p>
-        <div className="flex justify-between mt-4">
+           <div className="flex justify-between mt-4">
           <div>
             <Link href={git}>
               <FontAwesomeIcon icon={faGithub} className="h-5" />
@@ -40,6 +36,11 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="mt-4 w-2/3">
+        <p className="font-bold">{title}</p>
+        <p>{text}</p>
+     
       </div>
     </div>
   );
