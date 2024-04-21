@@ -8,8 +8,9 @@ const Projects = () => {
       <div className="h-full" style={{ overflow: "auto" }}>
         <p className="font-bold text-2xl">PROJECTS</p>
         <div className="mt-8 flex justify-between align-middle flex-wrap gap-4">
-          {ProjectsList.map((ele) => (
+          {ProjectsList.map((ele,index) => (
             <ProjectCard
+              key={index}
               image={ele.image}
               git={ele.git}
               text={ele.text}
