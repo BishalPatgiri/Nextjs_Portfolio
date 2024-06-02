@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const AboutMe = () => {
   return (
     <div className="h-full flex align-middle items-center gap-x-20 max-md:gap-x-10 max-sm:gap-x-6">
-      <div className="h-2/3 w-1/3 max-lg:h-1/2 max-md:h-2/5 max-sm:h-1/3">
+      <div className="h-5/7 w-1/3 max-lg:h-1/2 max-md:h-2/5 max-sm:h-1/3">
         <Image
           src={BishalPic}
           alt=""

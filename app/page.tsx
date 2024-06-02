@@ -8,7 +8,7 @@ export default function Home() {
     <main className="p-4 w-3/4 -mt-20 m-auto text-xl leading-8 max-lg:w-4/5 max-md:w-5/6 px-2 max-sm:w-11/12 max-lg:text-lg max-sm:text-base">
       <section id="about-me" className="pt-16 h-[100vh] relative">
         <AboutMe />
-        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-100">
+        <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-80">
           <svg
             width="364"
             height="201"
@@ -32,15 +32,6 @@ export default function Home() {
               d="M-98.1618 65.0889C-68.1416 60.0601 4.73364 60.4882 56.0734 102.431C120.248 154.86 139.905 161.419 177.137 166.956C214.37 172.493 255.575 186.165 281.856 215.481"
               stroke="url(#paint3_linear_25:218)"
             />
-            {/* <circle
-              opacity="0.8"
-              cx="214.505"
-              cy="60.5054"
-              r="49.7205"
-              transform="rotate(-13.421 214.505 60.5054)"
-              stroke="url(#paint4_linear_25:218)"
-            /> */}
-            {/* <circle cx="220" cy="63" r="43" fill="url(#paint5_radial_25:218)" /> */}
             <defs>
               <linearGradient
                 id="paint0_linear_25:218"
@@ -86,28 +77,6 @@ export default function Home() {
                 <stop stopColor="black" stopOpacity="0" />
                 <stop offset="1" stopColor="black" />
               </linearGradient>
-              {/* <linearGradient
-                id="paint4_linear_25:218"
-                x1="214.505"
-                y1="10.2849"
-                x2="212.684"
-                y2="99.5816"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="black" />
-                <stop offset="1" stopColor="black" stopOpacity="0" />
-              </linearGradient>
-              <radialGradient
-                id="paint5_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(220 63) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="white" stopOpacity="0" />
-                <stop offset="1" stopColor="white" stopOpacity="0.08" />
-              </radialGradient> */}
             </defs>
           </svg>
         </div>

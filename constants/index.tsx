@@ -13,7 +13,7 @@ import {
   faTwitter,
   faLinkedin,
   faTelegram,
-  faYarn,
+  faYarn
 } from "@fortawesome/free-brands-svg-icons";
 
 export const aboutMe =
@@ -30,7 +30,7 @@ export const NavLinks = [
 
 export const Skills = [
   { src: faReact, text: "ReactJs" },
-  { src: faAws, text: "AWS Lamda" },
+  { src: faAws, text: "AWS Services" },
   { src: faNodeJs, text: "Javascript" },
   { src: faNode, text: "NodeJS" },
   { src: faHtml5, text: "HTML" },
@@ -40,6 +40,7 @@ export const Skills = [
   { src: faGithub, text: "Github" },
   { src: faDocker, text: "Docker" },
   { src: faYarn, text: "Yarn" },
+  {src:'',text:"Excel"},
 ];
 
 export const SocialMedia = [
