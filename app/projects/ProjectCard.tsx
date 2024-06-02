@@ -20,7 +20,7 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
       className="h-80 flex justify-center gap-8 p-6 shadow-lg border-2 border-gray-1200 rounded-md backdrop-brightness-110"
       style={{ alignItems: "center" }}
     >
-      <div className="w-1/3 h-full border-8 border-gray-140">
+      <div className="w-1/3 h-5/6 border-x-8 border-gray-140">
         <Image
           height="400"
           width="400"

@@ -13,8 +13,12 @@ import {
   faTwitter,
   faLinkedin,
   faTelegram,
-  faYarn
+  faYarn,
+  faNpm,
+  faUbuntu
 } from "@fortawesome/free-brands-svg-icons";
+
+import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 export const aboutMe =
   "A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.";
@@ -33,14 +37,16 @@ export const Skills = [
   { src: faAws, text: "AWS Services" },
   { src: faNodeJs, text: "Javascript" },
   { src: faNode, text: "NodeJS" },
+  {src:faNpm,text:"NPM"},
   { src: faHtml5, text: "HTML" },
   { src: faCss3Alt, text: "CSS" },
   { src: faPython, text: "Python" },
+  {src:faUbuntu,text:"Ubuntu"},
   { src: faGit, text: "Git" },
   { src: faGithub, text: "Github" },
   { src: faDocker, text: "Docker" },
   { src: faYarn, text: "Yarn" },
-  {src:'',text:"Excel"},
+  {src:faFileExcel,text:"Excel"},
 ];
 
 export const SocialMedia = [
