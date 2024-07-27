@@ -15,7 +15,7 @@ import {
   faTelegram,
   faYarn,
   faNpm,
-  faUbuntu
+  faUbuntu,
 } from "@fortawesome/free-brands-svg-icons";
 
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
@@ -37,16 +37,16 @@ export const Skills = [
   { src: faAws, text: "AWS Services" },
   { src: faNodeJs, text: "Javascript" },
   { src: faNode, text: "NodeJS" },
-  { src:faNpm,text:"NPM"},
+  { src: faNpm, text: "NPM" },
   { src: faHtml5, text: "HTML" },
   { src: faCss3Alt, text: "CSS" },
   { src: faPython, text: "Python" },
-  { src:faUbuntu,text:"Ubuntu"},
+  { src: faUbuntu, text: "Ubuntu" },
   { src: faGit, text: "Git" },
   { src: faGithub, text: "Github" },
   { src: faDocker, text: "Docker" },
   { src: faYarn, text: "Yarn" },
-  {src:faFileExcel,text:"Excel"},
+  { src: faFileExcel, text: "Excel" },
 ];
 
 export const SocialMedia = [
