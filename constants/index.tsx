@@ -21,8 +21,8 @@ import {
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 
 export const aboutMe =
-  "A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.";
-
+  // "A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.";
+"A passionate and innovative Full Stack Developer with expertise in microservices architecture. I excel in driving holistic development and delivering cutting-edge solutions. As a collaborative team player, I actively contribute to accelerating projects and keeping platforms at the forefront of technology. Dedicated to coding and staying ahead of tech trends, I'm committed to excellence and innovation in every project."
 export const NavLinks = [
   { href: "#about-me", label: "About Me" },
   { href: "#skills", label: "Skills" },
