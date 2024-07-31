@@ -5,7 +5,7 @@ import SkillsDiv from "./skills";
 
 export default function Home() {
   return (
-    <main className="p-4 w-3/4 -mt-20 m-auto text-xl leading-8 max-lg:w-4/5 max-md:w-5/6 px-2 max-sm:w-11/12 max-lg:text-lg max-sm:text-base">
+    <main className="p-4 w-3/4 -mt-20 m-auto text-xl leading-8 max-lg:w-11/12 max-md:w-11/12 px-2 max-sm:w-full max-lg:text-lg max-sm:text-base">
       <section id="about-me" className="pt-16 h-[100vh] relative">
         <AboutMe />
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-80">
@@ -81,7 +81,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section id="skills" className="pt-16 h-[100vh] relative">
+      <section id="skills" className="pt-16 h-fit relative">
         <SkillsDiv />
         <div className="absolute top-60 left-20 z-[-1] opacity-30 lg:opacity-100">
           <svg
@@ -182,7 +182,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section id="projects" className="pt-16 relative">
+      <section id="projects" className="pt-24 relative">
         <Projects />
       </section>
       <section id="certifications" className="pt-16 relative">
