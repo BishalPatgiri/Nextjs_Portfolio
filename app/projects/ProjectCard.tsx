@@ -17,10 +17,10 @@ interface InputData {
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
     <div
-      className="h-80 flex justify-center gap-8 p-6 shadow-lg border-2 border-gray-1200 rounded-md backdrop-brightness-110"
+      className="h-100 flex justify-center gap-8 p-6 shadow-lg border-2 border-gray-1200 rounded-md backdrop-brightness-110 max-md:flex-col"
       style={{ alignItems: "center" }}
     >
-      <div className="w-1/3 h-5/6 border-x-8 border-gray-140">
+      <div className="w-7/12 h-full px-2 max-md:w-full">
         <Image
           height="400"
           width="400"
@@ -29,7 +29,7 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
           className="h-full w-full"
         />
       </div>
-      <div className="w-2/3 h-max text-center">
+      <div className="w-5/12 h-max text-center max-md:w-full">
         <p className="font-bold">{title}</p>
         <p>{text}</p>
         <div className="flex justify-around mt-4 gap-8">

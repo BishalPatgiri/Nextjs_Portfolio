@@ -7,7 +7,7 @@ const Projects = () => {
     <div className="h-full">
       <div className="h-full">
         <p className="font-bold text-2xl">PROJECTS</p>
-        <div className="mt-8 flex justify-between align-middle flex-wrap gap-4">
+        <div className="mt-8 flex justify-between align-middle flex-wrap gap-6">
           {ProjectsList.map((ele,index) => (
             <ProjectCard
               key={index}

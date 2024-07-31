@@ -9,7 +9,7 @@ const SkillsDiv = () => {
       <div>
         <p className="font-bold text-2xl">SKILLS I HAVE</p>
       </div>
-      <div className="mt-8 flex flex-wrap gap-10 justify-center max-sm:gap-1">
+      <div className="mt-8 flex flex-wrap gap-10 justify-center max-sm:gap-1 max-sm:mt-4">
         {Skills.map((ele, index) => (
           <div
             key={index}
