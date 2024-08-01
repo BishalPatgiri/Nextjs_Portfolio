@@ -1,5 +1,6 @@
 import AboutMe from "./aboutMe/AboutMe";
 import Certifications from "./certifications";
+import ContributionPage from "./contribution";
 import Projects from "./projects";
 import SkillsDiv from "./skills";
 
@@ -316,7 +317,9 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section id="contribution"></section>
+      <section id="contribution" className="h-fit pt-16 relative">
+        <ContributionPage/>
+      </section>
       <section id="contact-me"></section>
       <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
         <svg
