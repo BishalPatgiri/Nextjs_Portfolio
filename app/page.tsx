@@ -81,7 +81,7 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section id="skills" className="pt-16 h-fit relative max-sm:pt-12">
+      <section id="skills" className="pt-16 h-fit relative max-md:pt-8">
         <SkillsDiv />
         <div className="absolute top-60 left-20 z-[-1] opacity-30 lg:opacity-100">
           <svg
