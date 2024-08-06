@@ -29,7 +29,7 @@ const AboutMe = () => {
           ))}
         </div>
         <div className="mt-6">
-          <button className="px-4 border-2 border-gray-600 rounded-sm  shadow-lg">
+          <button className="px-4 border-2 border-gray-600 rounded-sm  shadow-lg hover:shadow-xl transition ease-in-out delay-20 hover:-translate-y-0.5 hover:scale-110 duration-300 hover:">
             RESUME
           </button>
         </div>
