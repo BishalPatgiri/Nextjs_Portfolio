@@ -17,7 +17,7 @@ interface InputData {
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
     <div
-      className="h-100 flex justify-center gap-8 p-6 shadow-lg border-2 border-gray-1200 rounded-md backdrop-brightness-110 max-md:flex-col max-md:w-11/12 max-sm:p-3"
+      className="h-100 flex justify-center gap-8 p-6 shadow-lg border-2 border-gray-1200 rounded-md backdrop-brightness-110 max-md:flex-col max-md:w-11/12 max-sm:p-3 dark:border-[#64FFDA] dark:shadow-lg dark:shadow-cyan-500/30"
       style={{ alignItems: "center" }}
     >
       <div className="w-7/12 h-full px-2 max-md:w-full">
