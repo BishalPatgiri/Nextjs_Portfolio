@@ -6,6 +6,7 @@ import ContributionPage from "./contribution";
 import Projects from "./projects";
 import SkillsDiv from "./skills";
 import GoTop from "@/components/goToTop";
+import ContactMePage from "./contactMe";
 
 
 export default function Home() {
@@ -344,7 +345,9 @@ export default function Home() {
       <section id="contribution" className="h-fit pt-16 relative">
         <ContributionPage/>
       </section>
-      <section id="contact-me"></section>
+      <section id="contact-me">
+        <ContactMePage />
+      </section>
       <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
         <svg
           width="450"

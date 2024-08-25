@@ -15,10 +15,10 @@ import {
   faTelegram,
   faYarn,
   faNpm,
-  faUbuntu,
+  faUbuntu
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
+import { faFileExcel,faPhone,faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const aboutMe =
   // "A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.";
@@ -53,7 +53,7 @@ export const SocialMedia = [
   { src: faFacebook, alt: "Facebook Logo",link:'https://www.facebook.com/bishal.p.9' },
   { src: faTwitter, alt: "Twitter Logo",link:'https://x.com/BishalP5' },
   { src: faLinkedin, alt: "LinkedIn Logo",link:'https://www.linkedin.com/in/bishal-patgiri-a80704198/' },
-  { src: faTelegram, alt: "Telegram Logo",link:'' }
+  { src: faTelegram, alt: "Telegram Logo",link:'/404' }
 ];
 
 export const ProjectsList = [
@@ -97,3 +97,8 @@ export const certificates = [
   { name: "", recognizedBy: "", imageUrl: "", link: "" },
   { name: "", recognizedBy: "", imageUrl: "", link: "" },
 ];
+
+export const contactMeOption=[
+  { medium:'Phone',icon:faPhone,detail:"+91 8638299172"},
+  { medium:'Email',icon:faEnvelope,detail:"bishalpatgiri67@gmail.com"},
+]
