@@ -50,10 +50,10 @@ export const Skills = [
 ];
 
 export const SocialMedia = [
-  { src: faFacebook, alt: "Facebook logo" },
-  { src: faTwitter, alt: "Twitter logo" },
-  { src: faLinkedin, alt: "LinkedIn logo" },
-  { src: faTelegram, alt: "Telegram logo" },
+  { src: faFacebook, alt: "Facebook Logo",link:'https://www.facebook.com/bishal.p.9' },
+  { src: faTwitter, alt: "Twitter Logo",link:'https://x.com/BishalP5' },
+  { src: faLinkedin, alt: "LinkedIn Logo",link:'https://www.linkedin.com/in/bishal-patgiri-a80704198/' },
+  { src: faTelegram, alt: "Telegram Logo",link:'' }
 ];
 
 export const ProjectsList = [

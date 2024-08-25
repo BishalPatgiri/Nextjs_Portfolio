@@ -30,7 +30,7 @@ export default function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
-    <main className="p-4 w-3/4 -mt-20 m-auto text-lg leading-8 max-lg:w-11/12 max-md:w-11/12 px-2 max-sm:w-full max-lg:text-sm max-sm:text-base">
+    <main className="p-4 w-3/4 -mt-20 m-auto tracking-wide text-lg leading-8 max-lg:w-11/12 max-md:w-11/12 px-2 max-sm:w-full max-lg:text-sm max-sm:text-base">
       <section id="about-me" className="pt-16 h-[100vh] relative max-sm:pt-20 max-sm:h-[84vh]">
         <AboutMe />
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-80">

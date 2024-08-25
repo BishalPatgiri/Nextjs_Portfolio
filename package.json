@@ -14,6 +14,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "caniuse-lite": "^1.0.30001653",
     "framer-motion": "^11.0.14",
     "i": "^0.3.7",
     "next": "14.0.4",
