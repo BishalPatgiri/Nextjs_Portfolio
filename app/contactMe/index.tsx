@@ -11,7 +11,7 @@ const ContactMePage = () => {
       <div className="mt-8 flex flex-wrap gap-10 justify-between max-sm:gap-4 max-sm:mt-2 max-sm:justify-between">
         <div className="w-5/12 max-sm:w-4/5">
           {contactMeOption.map((ele, index) => (
-            <div>
+            <div key={index}>
               <FontAwesomeIcon icon={ele.icon} className="h-4" />
               <span className="ml-4">{ele.detail}</span>
             </div>
