@@ -11,7 +11,6 @@ const GoTop = (props:any) => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -22,7 +21,6 @@ const GoTop = (props:any) => {
 
    // Handle the scroll to top action
    const scrollUp = () => {
-     console.log("Hello")
      window.scrollTo({ top: 0, behavior: 'smooth' });
    };
   return (
