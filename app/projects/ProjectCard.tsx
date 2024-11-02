@@ -33,12 +33,12 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
         <p className="font-bold">{title}</p>
         <p>{text}</p>
         <div className="flex justify-around mt-4 gap-8">
-          <div className="border border-gray-800 py-2 px-10 rounded-md cursor-pointer">
+          <div className="border border-gray-600 py-0 px-8 shadow-lg rounded-md cursor-pointer">
             <Link href={git}>
               <FontAwesomeIcon icon={faGithub} className="h-5" />
             </Link>
           </div>
-          <div className="border border-gray-800 py-2 px-10 rounded-md cursor-pointer">
+          <div className="border border-gray-600 py-0 px-8 shadow-lg rounded-md cursor-pointer">
             <Link href={deployed}>
               <FontAwesomeIcon icon={faLink} className="h-5" />
             </Link>
