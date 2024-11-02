@@ -4,7 +4,6 @@ import Link from "next/link";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons/faLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Styles from "./projectcard.module.css";
 
 interface InputData {
   image: string;
@@ -34,12 +33,12 @@ const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
         <p>{text}</p>
         <div className="flex justify-around mt-4 gap-8">
           <div className="border border-gray-600 py-0 px-8 shadow-lg rounded-md cursor-pointer">
-            <Link href={git}>
+            <Link  target="_blank" href={git}>
               <FontAwesomeIcon icon={faGithub} className="h-5" />
             </Link>
           </div>
           <div className="border border-gray-600 py-0 px-8 shadow-lg rounded-md cursor-pointer">
-            <Link href={deployed}>
+            <Link  target="_blank" href={deployed}>
               <FontAwesomeIcon icon={faLink} className="h-5" />
             </Link>
           </div>
