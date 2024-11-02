@@ -3,7 +3,7 @@ import GitHubCalendar from 'react-github-calendar';
 
 const ContributionPage = () => {
   return (
-    <div className="h-full pt-10">
+    <div className="h-full pt-8">
       <div>
         <p className="font-bold text-2xl max-sm:ml-4">My CONTRIBUTIONS in GITHUB</p>
       </div>

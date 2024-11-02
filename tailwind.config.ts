@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'theme-color': {'100':'#69CEB7','200':'#70BDAB','300':'#3A9C84'},
+      },
     },
     letterSpacing: {
       tightest: '-.075em',

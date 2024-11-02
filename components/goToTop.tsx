@@ -25,7 +25,7 @@ const GoTop = (props:any) => {
    };
   return (
     <div onClick={scrollUp}>
-      <button className="fixed bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-teal-400 text-white text-3xl font-bold  hover:bg-teal-600">
+      <button className="fixed bottom-8 right-8 border-0 w-12 h-12 rounded-full drop-shadow-md bg-theme-color-200 text-white text-3xl font-bold  hover:bg-theme-color-300">
       <FontAwesomeIcon icon={faChevronUp} />
       </button>
     </div>
