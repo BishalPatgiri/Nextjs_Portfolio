@@ -8,12 +8,8 @@ import { NavLinks } from "@/constants";
 import Switcher from "../../components/switcher";
 
 const Header = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
-  const toggleMode = () => {
-    setDarkMode(true);
-  };
-
   const [sticky, setSticky] = useState(false);
+
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
       setSticky(true);
@@ -21,6 +17,7 @@ const Header = () => {
       setSticky(false);
     }
   };
+  
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
   });
