@@ -13,13 +13,5 @@ export default {
       },
     },
   },
-  plugins: [],
-  safelist: [
-    'slick-slider',
-    'slick-list',
-    'slick-track',
-    'slick-prev',
-    'slick-next',
-    'slick-dots',
-  ],
+  plugins: []
 };
