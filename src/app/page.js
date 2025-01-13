@@ -1,4 +1,7 @@
 import AboutMe from "./aboutMe/AboutMe";
+import SkillsDiv from "./skills";
+import Projects from "./projects";
+
 export default function Home() {
   return (
     <main className="p-4 w-3/4 -mt-20 m-auto tracking-wide text-lg leading-8 max-lg:w-11/12 max-md:w-11/12 px-2 max-sm:w-full max-lg:text-sm max-sm:text-base">
@@ -77,13 +80,13 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      {/* <section id="skills" className="pt-16 h-fit relative max-md:pt-8">
+      <section id="skills" className="pt-16 h-fit relative max-md:pt-8">
         <SkillsDiv />
       </section>
       <section id="projects" className="pt-24 relative max-sm:pt-10">
         <Projects />
       </section>
-      <section id="certifications" className="pt-16 relative">
+      {/* <section id="certifications" className="pt-16 relative">
         <Certifications />
         <div className="absolute right-0 top-5 z-[-1]">
           <svg

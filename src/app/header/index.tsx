@@ -1,11 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import LogoLight from "../../assets/images/BrandLogoLight.png";
-import LogoDark from "../../assets/images/BrandLogoDark.jpg";
-import hamburg from "../../assets/icons/hamburger.svg";
-import { NavLinks } from "@/constants";
-import Switcher from "../../components/switcher";
+import { NavLinks } from "../constants";
+import Switcher from "../components/switcher";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -27,7 +24,7 @@ const Header = () => {
       <nav className=" flex justify-between items-center border-gray-500">
         <div className="rouded-full py-1 dark:hidden">
           <Image
-            src={LogoLight}
+            src="/icons/hamburger.svg"
             alt=""
             width={"100"}
             height={100}
@@ -36,7 +33,7 @@ const Header = () => {
         </div>
         <div className="rouded-full py-1 hidden dark:block">
           <Image
-            src={LogoDark}
+            src="/images/BrandLogoDark.jpg"
             alt=""
             width={"100"}
             height={100}
@@ -57,7 +54,7 @@ const Header = () => {
         </div>
         <div className="hidden max-md:block">
           <Image
-            src={hamburg}
+            src="/icons/hamburger.svg"
             alt=""
             width={"100"}
             height={100}

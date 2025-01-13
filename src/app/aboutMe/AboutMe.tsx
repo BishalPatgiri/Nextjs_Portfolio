@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +28,7 @@ const AboutMe = () => {
         </p>
         <div className="flex space-x-4 mt-4">
           {SocialMedia.map((ele, index) => (
-            <div key={index} className="cursor-pointer transition ease-in-out delay-20 hover:-translate-y-0.5 hover:scale-110 duration-300" onClick={()=>handleLinkClicked(ele.link)}>
+            <div key={index} className="cursor-pointer transition ease-in-out delay-20 hover:-translate-y-0.5 hover:scale-110 duration-300" onClick={(e)=>handleLinkClicked(ele.link)}>
               <FontAwesomeIcon icon={ele.src} className="h-8" />
             </div>
           ))}

@@ -1,7 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Skills } from "../../constants/index";
-// import  NextJs  from "../../assets/icons/nextjs.svg";
+import { Skills } from "../constants";
 
 const SkillsDiv = () => {
   return (
