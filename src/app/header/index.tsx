@@ -24,19 +24,19 @@ const Header = () => {
       <nav className=" flex justify-between items-center border-gray-500">
         <div className="rouded-full py-1 dark:hidden">
           <Image
-            src="/icons/hamburger.svg"
+            src="/images/BrandLogoLight.png"
             alt=""
-            width={"100"}
-            height={100}
-            style={{ height: "56px", width: "56px", borderRadius: "50%" }}
+            width={"400"}
+            height={400}
+            style={{ height: "56px", width: "56px"}}
           />
         </div>
         <div className="rouded-full py-1 hidden dark:block">
           <Image
             src="/images/BrandLogoDark.jpg"
             alt=""
-            width={"100"}
-            height={100}
+            width={400}
+            height={400}
             style={{ height: "56px", width: "56px", borderRadius: "50%" }}
           />
         </div>

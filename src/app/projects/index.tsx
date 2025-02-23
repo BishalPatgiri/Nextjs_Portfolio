@@ -66,9 +66,7 @@ const Projects = () => {
     //   <div className="h-full">
     //     <p className="font-bold text-2xl max-sm:ml-4">PROJECTS</p>
     //     <div className="mt-8 flex justify-between align-middle flex-wrap gap-6 max-md:justify-center">
-          // <div className="slider-container">
-                      <div className="slider-container">
-
+          <div className="slider-container">
         <Slider {...settings}>
       {ProjectsList.map((ele,index)=>(
         <div className={`${styles.panel} ${highlightedIndex === index ? styles.highlighted : ""}`} key={index} >
