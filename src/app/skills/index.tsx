@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Skills } from "../constants";
+import { Skills } from "../../constants";
 
 const SkillsDiv = () => {
   return (

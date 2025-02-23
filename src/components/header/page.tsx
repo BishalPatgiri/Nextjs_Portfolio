@@ -1,26 +1,11 @@
 "use client";
-import { useEffect, useState } from "react";
 import Image from "next/image";
-import { NavLinks } from "../constants";
-import Switcher from "../components/switcher";
+import { NavLinks } from "../../constants";
+import Switcher from "../switcher";
 
 const Header = () => {
-  const [sticky, setSticky] = useState(false);
-
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
-  
-  useEffect(() => {
-    window.addEventListener("scroll", handleStickyNavbar);
-  });
-
   return (
-    <header className="header sticky top-0 left-0 right-0 px-16 z-40 text-[#0E1B18] font-bold border-black shadow-md rounded-md max-lg:px-4 bg-white !bg-opacity-90 dark:bg-[#0E1B1B] dark:text-white dark:shadow-slate-600">
+    <header className="header sticky top-0 left-0 right-0 px-16 z-40 text-[#0E1B18] border-black shadow-md rounded-md max-lg:px-4 bg-white !bg-opacity-90 dark:bg-[#0E1B1B] dark:text-white dark:shadow-slate-600">
       <nav className=" flex justify-between items-center border-gray-500">
         <div className="rouded-full py-1 dark:hidden">
           <Image
@@ -28,7 +13,7 @@ const Header = () => {
             alt=""
             width={"400"}
             height={400}
-            style={{ height: "56px", width: "56px"}}
+            style={{ height: "56px", width: "56px" }}
           />
         </div>
         <div className="rouded-full py-1 hidden dark:block">

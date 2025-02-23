@@ -1,14 +1,13 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { aboutMe, SocialMedia } from "../constants";
+import { aboutMe, SocialMedia } from "../../constants";
 
 const AboutMe = () => {
-
-  const handleLinkClicked=(link:string)=>{
-    window.open(link, '_blank');
-  }
+  const handleLinkClicked = (link: string) => {
+    window.open(link, "_blank");
+  };
 
   return (
     <div className="h-full flex align-middle items-center gap-x-20 max-md:gap-x-6 max-sm:gap-x-6 max-sm:flex-col">
@@ -18,17 +17,19 @@ const AboutMe = () => {
           alt=""
           width={"400"}
           height={600}
-          style={{ height: "100%", width: "96%", borderRadius: "54% 0%"}}
+          style={{ height: "100%", width: "96%", borderRadius: "54% 0%" }}
         />
       </div>
       <div className="w-2/3 max-sm:w-11/12 max-sm:mt-4">
         <p className=" font-bold text-4xl font-mono">Hi, I am Bishal ...</p>
-        <p className="mt-4">
-          {aboutMe}
-        </p>
+        <p className="mt-4">{aboutMe}</p>
         <div className="flex space-x-4 mt-4">
           {SocialMedia.map((ele, index) => (
-            <div key={index} className="cursor-pointer transition ease-in-out delay-20 hover:-translate-y-0.5 hover:scale-110 duration-300" onClick={(e)=>handleLinkClicked(ele.link)}>
+            <div
+              key={index}
+              className="cursor-pointer transition ease-in-out delay-20 hover:-translate-y-0.5 hover:scale-110 duration-300"
+              onClick={(e) => handleLinkClicked(ele.link)}
+            >
               <FontAwesomeIcon icon={ele.src} className="h-8" />
             </div>
           ))}
