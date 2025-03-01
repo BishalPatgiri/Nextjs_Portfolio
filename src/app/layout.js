@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         {/* Add Font Awesome CSS */}
         <link
@@ -30,12 +30,11 @@ export default function RootLayout({ children }) {
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         className={`text-[#0E1B18] bg-[#FCFCFC] dark:bg-[#0E1B18] ${inter.className} dark:text-white`}
       >
-          <ThemeProvider>
-
-        <Providers>
+        <ThemeProvider>
+          <Providers>
             <Header />
             {children}
-        </Providers>
+          </Providers>
         </ThemeProvider>
 
       </body>
