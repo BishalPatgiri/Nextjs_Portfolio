@@ -1,17 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Inter } from "next/font/google";
 import Header from "../components/header/page";
-import { ThemeProvider } from "next-themes";
+import { Providers } from "./providers";
+import { ThemeProvider } from "./context/ThemeContext"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio Bishal Patgiri",
@@ -34,12 +27,17 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`text-[#0E1B18] bg-[#FCFCFC] dark:bg-[#0E1B18] ${inter.className} dark:text-white`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system">
+          <ThemeProvider>
+
+        <Providers>
             <Header />
             {children}
+        </Providers>
         </ThemeProvider>
+
       </body>
     </html>
   );

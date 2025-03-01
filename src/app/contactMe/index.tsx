@@ -1,6 +1,6 @@
-import { contactMeOption } from "@/constants";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { contactMeOption } from "../../constants";
 
 interface IFormData {
   name: string;

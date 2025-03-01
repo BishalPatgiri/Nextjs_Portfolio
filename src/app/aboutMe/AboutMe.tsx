@@ -18,6 +18,7 @@ const AboutMe = () => {
           width={"400"}
           height={600}
           style={{ height: "100%", width: "96%", borderRadius: "54% 0%" }}
+          priority
         />
       </div>
       <div className="w-2/3 max-sm:w-11/12 max-sm:mt-4">
