@@ -11,7 +11,7 @@ const AboutMe = () => {
 
   return (
     <div className="h-full flex align-middle items-center gap-x-20 max-md:gap-x-6 max-sm:gap-x-6 max-sm:flex-col">
-      <div className="h-5/7 w-1/3 max-lg:h-1/2 max-md:h-2/5 max-sm:h-2/3 max-sm:w-5/12">
+      <div className="h-5/7 w-1/3 max-lg:h-1/2 max-md:h-2/5 max-sm:h-2/3 max-sm:w-5/12 max-[420px]:h-1/4 max-[420px]:w-7/12">
         <Image
           src="/images/Bishal.jpg"
           alt=""

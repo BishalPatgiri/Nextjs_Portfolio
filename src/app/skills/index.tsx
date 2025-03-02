@@ -4,7 +4,7 @@ import { Skills } from "../../constants";
 
 const SkillsDiv = () => {
   return (
-    <div className="h-full pt-10">
+    <div className="h-fit">
       <div>
         <p className="font-bold text-2xl max-sm:ml-4">SKILLS I HAVE</p>
       </div>
