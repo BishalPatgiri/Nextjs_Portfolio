@@ -4,12 +4,12 @@ import GitHubCalendar from 'react-github-calendar';
 
 const ContributionPage = () => {
   return (
-    <div className="h-full">
+    <div className="h-full px-4">
       <div>
-        <p className="font-bold text-2xl max-sm:ml-4">My CONTRIBUTIONS in GITHUB</p>
+        <p className="font-bold text-2xl max-sm:text-xl">My GITHUB CONTRIBUTIONS</p>
       </div>
-      <div className="mt-8 flex flex-wrap gap-10 justify-center max-sm:gap-0 max-sm:mt-2">
-      <GitHubCalendar username="BishalPatgiri" />
+      <div className="mt-8 flex flex-wrap gap-10 justify-center max-sm:gap-0 max-sm:mt-4">
+      <GitHubCalendar username="BishalPatgiri"/>
       </div>
     </div>
   )

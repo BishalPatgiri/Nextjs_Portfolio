@@ -26,7 +26,7 @@ const Header = () => {
           />
         </div>
         <div>
-          <ul className="flex justify-center items-center align-middle gap-8 max-md:hidden md:gap-6">
+          <ul className="flex justify-center items-center align-middle gap-8 max-md:hidden md:gap-6 font-medium">
             {NavLinks.map((ele) => (
               <li key={ele.label}>
                 <a href={ele.href}>{ele.label.toUpperCase()}</a>
