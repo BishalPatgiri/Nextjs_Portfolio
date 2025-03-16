@@ -52,7 +52,8 @@ const Projects = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-  };
+    // centerMode: true,
+    };
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -71,7 +72,7 @@ const Projects = () => {
           <div
             className={`${styles.panel} ${
               highlightedIndex === index ? styles.highlighted : ""
-            }`}
+            } h-[400px]`}
             key={index}
           >
             <ProjectCard {...ele} />

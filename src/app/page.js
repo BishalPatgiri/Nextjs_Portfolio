@@ -2,7 +2,7 @@ import AboutMe from "./aboutMe/AboutMe";
 import SkillsDiv from "./skills";
 import ContactMePage from "./contactMe";
 import ContributionPage from "./contribution";
-// import Projects from "./projects";
+import Projects from "./projects";
 
 export default function Home() {
   return (
@@ -163,9 +163,9 @@ export default function Home() {
       <section id="contact-me" className="h-fit pt-16 relative max-md:pt-10">
         <ContactMePage />
       </section>
-      {/* <section id="projects" className="pt-24 relative max-sm:pt-10">
+      <section id="projects" className="pt-24 relative max-sm:pt-10">
         <Projects />
-      </section> */}
+      </section>
       {/* <section id="certifications" className="pt-16 relative">
         <Certifications />
         <div className="absolute right-0 top-5 z-[-1]">
