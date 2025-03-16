@@ -3,6 +3,7 @@ import SkillsDiv from "./skills";
 import ContactMePage from "./contactMe";
 import ContributionPage from "./contribution";
 import Projects from "./projects";
+import MyProject from "./My_project";
 
 export default function Home() {
   return (
@@ -164,7 +165,8 @@ export default function Home() {
         <ContactMePage />
       </section>
       <section id="projects" className="pt-24 relative max-sm:pt-10">
-        <Projects />
+        {/* <Projects /> */}
+        <MyProject/>
       </section>
       {/* <section id="certifications" className="pt-16 relative">
         <Certifications />
