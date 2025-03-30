@@ -4,6 +4,7 @@ import ContactMePage from "./contactMe";
 import ContributionPage from "./contribution";
 import Projects from "./projects";
 import MyProject from "./My_project";
+import Carousel from "./testimonials/testimonials";
 
 export default function Home() {
   return (
@@ -166,7 +167,8 @@ export default function Home() {
       </section>
       <section id="projects" className="pt-24 relative max-sm:pt-10">
         {/* <Projects /> */}
-        <MyProject/>
+        {/* <MyProject/> */}
+        <Carousel/>
       </section>
       {/* <section id="certifications" className="pt-16 relative">
         <Certifications />
