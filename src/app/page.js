@@ -166,9 +166,9 @@ export default function Home() {
         <ContactMePage />
       </section>
       <section id="projects" className="pt-24 relative max-sm:pt-10">
-        <Projects />
+        {/* <Projects /> */}
         {/* <MyProject/> */}
-        {/* <Carousel/> */}
+        <Carousel/>
       </section>
       {/* <section id="certifications" className="pt-16 relative">
         <Certifications />
