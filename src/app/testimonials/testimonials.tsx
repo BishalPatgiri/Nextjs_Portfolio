@@ -55,6 +55,7 @@ const carouselItems = [
     rating: 5
   },
 ]
+
 const Carousel: React.FC = () => {
   const [highlightedIndex, setHighlightedIndex] = useState<number>(1); // Default to first item
   const sliderRef = useRef<Slider | null>(null); // Properly type the slider reference
@@ -64,7 +65,6 @@ const Carousel: React.FC = () => {
     if (sliderRef.current) {
       sliderRef.current.slickGoTo(0); // Start with the first slide
     }
-
     return () => {
       // Cleanup interval on unmount
       if (intervalId.current) {
