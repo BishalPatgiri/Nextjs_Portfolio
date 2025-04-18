@@ -1,5 +1,4 @@
 "use client" // If using the Next.js app directory
-
 import React, { useEffect, useRef, useState } from "react"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
@@ -113,7 +112,6 @@ const Carousel: React.FC = () => {
     setHighlightedIndex(index);
   };
 
-
   const handleAutoSlide = (slideType: string) => {
     const itemsCount = carouselItems.length
     let index = highlightedIndex
@@ -135,8 +133,7 @@ const Carousel: React.FC = () => {
     }
   };
 
-  console.log("Hightlighted",highlightedIndex)
-
+  // console.log("Hightlighted",highlightedIndex)
   return (
     <div className={styles.mainDiv}>
       <div
