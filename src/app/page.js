@@ -2,7 +2,7 @@ import AboutMe from "./aboutMe/AboutMe";
 import SkillsDiv from "./skills";
 import ContactMePage from "./contactMe";
 import ContributionPage from "./contribution";
-import Projects from "./projects";
+import Projects from "./projects/index";
 
 export default function Home() {
   return (
@@ -157,14 +157,14 @@ export default function Home() {
           </svg>
         </div>
       </section>
+      <section id="projects" className="pt-24 relative max-sm:pt-10">
+        <Projects />
+      </section>
       <section id="contribution" className="h-fit pt-20 relative max-md:pt-10">
         <ContributionPage/>
       </section>
       <section id="contact-me" className="h-fit pt-16 relative max-md:pt-10">
         <ContactMePage />
-      </section>
-      <section id="projects" className="pt-24 relative max-sm:pt-10">
-        <Projects />
       </section>
       {/* <section id="certifications" className="pt-16 relative">
         <Certifications />
