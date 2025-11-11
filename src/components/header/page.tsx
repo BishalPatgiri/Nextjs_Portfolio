@@ -1,15 +1,21 @@
 "use client";
 import Image from "next/image";
 import { NavLinks } from "../../constants";
-import Switcher from "../switcher";
-import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import Switcher from "../switcher";
 
 const Header = () => {
-  const [showDropDown, setShowDropDown] = useState(false);
-  const [hoverText, setHoverText] = useState("ABOUT ME");
+  const pathname = usePathname();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
+  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -18,142 +24,197 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const menuVariants = {
-    closed: {
-      opacity: 0,
-      y: -20,
-      scale: 0.95,
-      transition: { duration: 0.2 }
-    },
-    open: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: { duration: 0.3, ease: "easeOut" }
-    }
+  // Handle dark mode
+  useEffect(() => {
+    const isDark = document.documentElement.classList.contains("dark");
+    setDarkMode(isDark);
+  }, []);
+
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle("dark");
+    setDarkMode(!darkMode);
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`header sticky top-0 left-0 right-0 px-16 z-40 text-[#0E1B18] rounded-md max-lg:px-4 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/80 dark:bg-[#0E1B1B]/90 backdrop-blur-xl shadow-lg dark:shadow-slate-600"
-          : "bg-white/70 dark:bg-[#0E1B1B]/70 backdrop-blur-md shadow-md dark:shadow-slate-600"
-      }`}
-    >
-      <nav className="flex justify-between items-center">
-        <motion.div
-          whileHover={{ scale: 1.05, rotate: 5 }}
-          whileTap={{ scale: 0.95 }}
-          className="rounded-full py-1 dark:hidden cursor-pointer"
-        >
-          <Image
-            src="/images/BrandLogoLight.png"
-            alt="Brand Logo"
-            width={400}
-            height={400}
-            style={{ height: "56px", width: "56px" }}
-          />
-        </motion.div>
-        <motion.div
-          whileHover={{ scale: 1.05, rotate: -5 }}
-          whileTap={{ scale: 0.95 }}
-          className="rounded-full py-1 hidden dark:block cursor-pointer"
-        >
-          <Image
-            src="/images/BrandLogoDark.jpg"
-            alt="Brand Logo"
-            width={400}
-            height={400}
-            style={{ height: "56px", width: "56px", borderRadius: "50%" }}
-          />
-        </motion.div>
-
-        <div>
-          <ul className="flex justify-center items-center align-middle gap-8 max-md:hidden md:gap-6 font-medium">
-            {NavLinks.map((ele, index) => (
-              <motion.li
-                key={ele.label}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.1, y: -2 }}
+    <>
+      {/* Main Header */}
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled
+            ? "bg-white/95 dark:bg-[#0E1B1B]/95 backdrop-blur-lg shadow-lg"
+            : "bg-white/80 dark:bg-[#0E1B1B]/80 backdrop-blur-md"
+        }`}
+      >
+        <nav className="container mx-auto px-6 max-sm:px-4">
+          <div className="flex items-center justify-between h-20 max-sm:h-16">
+            {/* Logo */}
+            <Link href="/" onClick={closeMobileMenu}>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                className="relative w-14 h-14 max-sm:w-12 max-sm:h-12 cursor-pointer group"
               >
-                <a
-                  href={ele.href}
-                  className="relative group transition-colors duration-300 hover:text-[#70BDAB] dark:hover:text-[#70BDAB]"
-                >
-                  {ele.label.toUpperCase()}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#70BDAB] transition-all duration-300 group-hover:w-full"></span>
-                </a>
-              </motion.li>
-            ))}
-            <motion.li
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <Switcher />
-            </motion.li>
-          </ul>
-        </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#70BDAB] to-[#3A9C84] rounded-lg opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+                <Image
+                  src="/images/BrandLogoLight.png"
+                  alt="Bishal Patgiri Logo"
+                  width={56}
+                  height={56}
+                  className="relative z-10 rounded-lg"
+                  priority
+                />
+              </motion.div>
+            </Link>
 
-        <motion.div
-          className="hidden max-md:block"
-          whileTap={{ scale: 0.9 }}
-        >
-          <Image
-            src="/icons/hamburger.svg"
-            alt="Menu"
-            width={100}
-            height={100}
-            style={{ height: "28px", width: "44px", cursor: "pointer" }}
-            onClick={() => setShowDropDown(!showDropDown)}
-          />
-        </motion.div>
-      </nav>
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-1">
+              {NavLinks.map((link, index) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link key={index} href={link.href}>
+                    <motion.div
+                      whileHover={{ y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                      className={`relative px-4 py-2 rounded-lg font-medium text-sm transition-all duration-300 ${
+                        isActive
+                          ? "text-[#70BDAB] dark:text-[#70BDAB]"
+                          : "text-gray-700 dark:text-gray-300 hover:text-[#70BDAB] dark:hover:text-[#70BDAB]"
+                      }`}
+                    >
+                      {link.label}
+                      {isActive && (
+                        <motion.div
+                          layoutId="activeNav"
+                          className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-[#70BDAB] to-[#3A9C84]"
+                          transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                        />
+                      )}
+                    </motion.div>
+                  </Link>
+                );
+              })}
+            </div>
 
+            {/* Right Section: Dark Mode + Mobile Menu */}
+            <div className="flex items-center gap-4 max-sm:gap-3">
+              {/* Dark Mode Toggle */}
+                 <Switcher />
+              {/* Mobile Menu Button */}
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={toggleMobileMenu}
+                className="lg:hidden w-10 h-10 max-sm:w-9 max-sm:h-9 flex items-center justify-center rounded-lg bg-gradient-to-r from-[#70BDAB] to-[#3A9C84] text-white shadow-md hover:shadow-lg transition-all duration-300"
+                aria-label="Toggle menu"
+              >
+                <FontAwesomeIcon
+                  icon={mobileMenuOpen ? faTimes : faBars}
+                  className="h-5 max-sm:h-4"
+                />
+              </motion.button>
+            </div>
+          </div>
+        </nav>
+      </motion.header>
+
+      {/* Mobile Menu Overlay */}
       <AnimatePresence>
-        {showDropDown && (
-          <motion.div
-            variants={menuVariants}
-            initial="closed"
-            animate="open"
-            exit="closed"
-            className="absolute top-20 right-4 bg-white/95 dark:bg-[#0E1B1B]/95 backdrop-blur-xl p-4 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700"
-          >
-            <ul className="text-sm">
-              {NavLinks.map((ele, index) => (
-                <motion.li
-                  key={ele.label}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  className={`py-2.5 px-6 my-1 rounded-lg cursor-pointer transition-all duration-200 ${
-                    hoverText === ele.label.toUpperCase()
-                      ? "bg-gradient-to-r from-[#70BDAB] to-[#3A9C84] text-white shadow-md"
-                      : "hover:bg-gray-100 dark:hover:bg-gray-800"
-                  }`}
+        {mobileMenuOpen && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+              onClick={closeMobileMenu}
+            />
+
+            {/* Mobile Menu Panel */}
+            <motion.div
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed top-0 right-0 bottom-0 w-80 max-sm:w-full bg-white dark:bg-[#0E1B1B] shadow-2xl z-50 lg:hidden overflow-y-auto"
+            >
+              {/* Mobile Menu Header */}
+              <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-800">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/images/BrandLogoLight.png"
+                    alt="Logo"
+                    width={40}
+                    height={40}
+                    className="rounded-lg"
+                  />
+                  <span className="font-bold text-xl bg-gradient-to-r from-[#70BDAB] to-[#3A9C84] bg-clip-text text-transparent">
+                    Menu
+                  </span>
+                </div>
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
+                  onClick={closeMobileMenu}
+                  className="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 >
-                  <a
-                    href={ele.href}
-                    className="block"
-                    onMouseEnter={() => setHoverText(ele.label.toUpperCase())}
-                    onClick={() => setShowDropDown(!showDropDown)}
-                  >
-                    {ele.label.toUpperCase()}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
+                  <FontAwesomeIcon icon={faTimes} className="h-5 text-gray-700 dark:text-gray-300" />
+                </motion.button>
+              </div>
+
+              {/* Mobile Navigation Links */}
+              <div className="p-6 space-y-2">
+                {NavLinks.map((link, index) => {
+                  const isActive = pathname === link.href;
+                  return (
+                    <Link key={index} href={link.href} onClick={closeMobileMenu}>
+                      <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        className={`relative px-6 py-4 rounded-xl font-semibold text-base transition-all duration-300 flex items-center justify-between ${
+                          isActive
+                            ? "bg-gradient-to-r from-[#70BDAB] to-[#3A9C84] text-white shadow-md"
+                            : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                        }`}
+                      >
+                        <span>{link.label}</span>
+                        {isActive && (
+                          <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            className="w-2 h-2 bg-white rounded-full"
+                          />
+                        )}
+                      </motion.div>
+                    </Link>
+                  );
+                })}
+              </div>
+
+              {/* Mobile Menu Footer */}
+              <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-200 dark:border-gray-800 bg-gradient-to-t from-gray-50 to-transparent dark:from-gray-900 dark:to-transparent">
+                <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+                  © 2025 Bishal Patgiri
+                </p>
+              </div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
-    </motion.header>
+    </>
   );
 };
 
