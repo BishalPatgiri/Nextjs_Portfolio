@@ -3,11 +3,14 @@ import SkillsDiv from "./skills";
 import ContactMePage from "./contactMe";
 import ContributionPage from "./contribution";
 import Projects from "./projects/index";
+import Certifications from "./certifications";
 
 export default function Home() {
   return (
     <main className="p-4 w-3/4 -mt-20 m-auto tracking-wide text-base leading-8 max-lg:w-11/12 max-md:w-11/12 px-2 max-sm:w-full max-sm:text-sm/7">
-      <section id="about-me" className="pt-16 h-[100vh] relative max-sm:pt-20 max-sm:h-[104vh]">
+<section id="about-me" className="pt-16 h-[110vh] pb-20 relative max-sm:pt-20 max-sm:min-h-fit max-sm:pb-32">
+{/* <section id="about-me" className="pt-16 h-[100vh] relative max-sm:pt-20 max-sm:h-[104vh]"> */}
+
         <AboutMe />
         <div className="absolute bottom-0 left-0 z-[-1] opacity-30 lg:opacity-80">
           <svg
@@ -159,6 +162,63 @@ export default function Home() {
       </section>
       <section id="projects" className="pt-24 relative max-sm:pt-10">
         <Projects />
+      </section>
+       <section id="certifications" className="pt-24 pb-10 relative max-sm:pt-16">
+        <Certifications />
+        <div className="absolute right-0 top-5 z-[-1] opacity-30 lg:opacity-100">
+          <svg
+            width="238"
+            height="531"
+            viewBox="0 0 238 531"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              opacity="0.3"
+              x="422.819"
+              y="-70.8145"
+              width="196"
+              height="541.607"
+              rx="2"
+              transform="rotate(51.2997 422.819 -70.8145)"
+              fill="url(#paint0_linear_83:2)"
+            />
+            <rect
+              opacity="0.3"
+              x="426.568"
+              y="144.886"
+              width="59.7544"
+              height="541.607"
+              rx="2"
+              transform="rotate(51.2997 426.568 144.886)"
+              fill="url(#paint1_linear_83:2)"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_83:2"
+                x1="517.152"
+                y1="-251.373"
+                x2="517.152"
+                y2="459.865"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#70BDAB" />
+                <stop offset="1" stopColor="#70BDAB" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_83:2"
+                x1="455.327"
+                y1="-35.673"
+                x2="455.327"
+                y2="675.565"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#70BDAB" />
+                <stop offset="1" stopColor="#70BDAB" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
       </section>
       <section id="contribution" className="h-fit pt-20 relative max-md:pt-10">
         <ContributionPage/>
