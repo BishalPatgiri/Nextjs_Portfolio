@@ -30,11 +30,6 @@ const Header = () => {
     setDarkMode(isDark);
   }, []);
 
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle("dark");
-    setDarkMode(!darkMode);
-  };
-
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
@@ -50,13 +45,13 @@ const Header = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`w-full fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
             ? "bg-white/95 dark:bg-[#0E1B1B]/95 backdrop-blur-lg shadow-lg"
             : "bg-white/80 dark:bg-[#0E1B1B]/80 backdrop-blur-md"
         }`}
       >
-        <nav className="container mx-auto px-6 max-sm:px-4">
+        <nav className="container mx-auto px-6 max-sm:px-6">
           <div className="flex items-center justify-between h-20 max-sm:h-16">
             {/* Logo */}
             <Link href="/" onClick={closeMobileMenu}>
@@ -105,7 +100,6 @@ const Header = () => {
                 );
               })}
             </div>
-
             {/* Right Section: Dark Mode + Mobile Menu */}
             <div className="flex items-center gap-4 max-sm:gap-3">
               {/* Dark Mode Toggle */}
