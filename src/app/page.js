@@ -85,81 +85,83 @@ export default function Home() {
           </svg>
         </div>
       </section>
-      <section id="skills" className="h-fit pt-20 relative max-md:pt-10">
-        <SkillsDiv />
-        <div className="absolute top-60 left-20 z-[-1] opacity-30 lg:opacity-100">
-          <svg
-            width="600"
-            height="201"
-            viewBox="0 0 600 201"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="220" cy="64" r="60" fill="url(#paint1_radial_25:218)" />
-            <circle cx="334" cy="90" r="50" fill="url(#paint2_radial_25:218)" />
-            <circle cx="430" cy="94" r="40" fill="url(#paint3_radial_25:218)" />
-            <circle cx="510" cy="84" r="30" fill="url(#paint4_radial_25:218)" />
-            <circle cx="570" cy="70" r="20" fill="url(#paint5_radial_25:218)" />
-            <defs>
-              <radialGradient
-                id="paint1_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(220 64) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
-                <stop offset="1" stopColor="#70BDAB" stopOpacity="0.35" />
-              </radialGradient>
-              <radialGradient
-                id="paint2_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(334 90) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
-                <stop offset="1" stopColor="#70BDAB" stopOpacity="0.3" />
-              </radialGradient>
-              <radialGradient
-                id="paint3_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(430 94) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
-                <stop offset="1" stopColor="#70BDAB" stopOpacity="0.28" />
-              </radialGradient>
-              <radialGradient
-                id="paint4_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(510 84) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
-                <stop offset="1" stopColor="#70BDAB" stopOpacity="0.26" />
-              </radialGradient>
-              <radialGradient
-                id="paint5_radial_25:218"
-                cx="0"
-                cy="0"
-                r="1"
-                gradientUnits="userSpaceOnUse"
-                gradientTransform="translate(570 70) rotate(90) scale(43)"
-              >
-                <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
-                <stop offset="1" stopColor="#70BDAB" stopOpacity="0.22" />
-              </radialGradient>
-            </defs>
-          </svg>
-        </div>
-      </section>
+      <section id="skills" className="h-fit pt-20 relative max-md:pt-10 max-sm:mt-80">
+  <SkillsDiv />
+  <div className="absolute top-60 left-20 z-[-1] opacity-20 scale-50 md:scale-75 md:opacity-40 lg:scale-100 lg:opacity-100 max-sm:hidden">
+    <svg
+      width="600"
+      height="201"
+      viewBox="0 0 600 201"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-auto max-w-[300px] md:max-w-[450px] lg:max-w-[600px]"
+    >
+      <circle cx="220" cy="64" r="60" fill="url(#paint1_radial_25:218)" />
+      <circle cx="334" cy="90" r="50" fill="url(#paint2_radial_25:218)" />
+      <circle cx="430" cy="94" r="40" fill="url(#paint3_radial_25:218)" />
+      <circle cx="510" cy="84" r="30" fill="url(#paint4_radial_25:218)" />
+      <circle cx="570" cy="70" r="20" fill="url(#paint5_radial_25:218)" />
+      <defs>
+        <radialGradient
+          id="paint1_radial_25:218"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(220 64) rotate(90) scale(43)"
+        >
+          <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
+          <stop offset="1" stopColor="#70BDAB" stopOpacity="0.35" />
+        </radialGradient>
+        <radialGradient
+          id="paint2_radial_25:218"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(334 90) rotate(90) scale(43)"
+        >
+          <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
+          <stop offset="1" stopColor="#70BDAB" stopOpacity="0.3" />
+        </radialGradient>
+        <radialGradient
+          id="paint3_radial_25:218"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(430 94) rotate(90) scale(43)"
+        >
+          <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
+          <stop offset="1" stopColor="#70BDAB" stopOpacity="0.28" />
+        </radialGradient>
+        <radialGradient
+          id="paint4_radial_25:218"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(510 84) rotate(90) scale(43)"
+        >
+          <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
+          <stop offset="1" stopColor="#70BDAB" stopOpacity="0.26" />
+        </radialGradient>
+        <radialGradient
+          id="paint5_radial_25:218"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(570 70) rotate(90) scale(43)"
+        >
+          <stop offset="0.145833" stopColor="#70BDAB" stopOpacity="0" />
+          <stop offset="1" stopColor="#70BDAB" stopOpacity="0.22" />
+        </radialGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
+
       <section id="projects" className="pt-24 relative max-sm:pt-10">
         <Projects />
       </section>
