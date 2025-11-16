@@ -51,7 +51,7 @@ const Certifications = () => {
   };
 
   return (
-    <div className="h-fit w-full">
+    <div className="h-fit w-full max-sm:px-4">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
