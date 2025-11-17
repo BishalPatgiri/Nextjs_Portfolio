@@ -9,16 +9,46 @@ import {
   faGit,
   faGithub,
   faDocker,
+  faYarn,
+  faNpm,
+  faUbuntu,
+  faJs,
   faFacebook,
   faTwitter,
   faLinkedin,
   faTelegram,
-  faYarn,
-  faNpm,
-  faUbuntu
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faFileExcel,faPhone,faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { 
+  faFileExcel,
+  faPhone,
+  faEnvelope,
+  faDatabase,
+  faCloud,
+  faCode,
+  faBrain,
+  faCog,
+  faServer,
+  faLayerGroup,
+  faRobot,
+  faMicrochip,
+  faChartLine,
+  faCube,
+  faBolt,
+  faLock,
+  faPlug,
+  faWaveSquare,
+  faCircleNodes,
+  faDollarSign,
+  faEye,
+  faShield,
+  faBoxesStacked,
+  faGears,
+  faComments,
+  faCreditCard,
+  faProjectDiagram,
+  faPeopleGroup
+} from "@fortawesome/free-solid-svg-icons";
 
 export const aboutMe =
   // "A dynamic Full Stack Developer with a flair for innovation and a dedicated towards work. I bring a blend of passion and expertise to drive holistic development, actively contributing to key solutions using microservices architecture. A collaborative team player, I thrive in accelerating development through active participation. Always at the forefront of tech trends, I ensure every platform I built remains cutting-edge. Love to code. Elevate your team with a developer dedicated to excellence and innovation.";
@@ -33,20 +63,91 @@ export const NavLinks = [
 ];
 
 export const Skills = [
-  { src: faReact, text: "ReactJs" },
-  { src: faAws, text: "AWS Services" },
-  { src: faNodeJs, text: "Javascript" },
-  { src: faNode, text: "NodeJS" },
-  { src: faNpm, text: "NPM" },
-  { src: faHtml5, text: "HTML" },
-  { src: faCss3Alt, text: "CSS" },
-  { src: faPython, text: "Python" },
-  { src: faUbuntu, text: "Ubuntu" },
-  { src: faGit, text: "Git" },
-  { src: faGithub, text: "Github" },
-  { src: faDocker, text: "Docker" },
-  { src: faYarn, text: "Yarn" },
-  { src: faFileExcel, text: "Excel" },
+  // ===== FRONTEND DEVELOPMENT =====
+  { src: faReact, text: "Next.js", category: "Frontend", level: "Advanced", priority: 1 },
+  { src: faReact, text: "React.js", category: "Frontend", level: "Advanced", priority: 2 },
+  { src: faJs, text: "TypeScript", category: "Frontend", level: "Advanced", priority: 3 },
+  { src: faReact, text: "Redux", category: "Frontend", level: "Advanced", priority: 4 },
+  { src: faHtml5, text: "HTML5", category: "Frontend", level: "Advanced", priority: 5 },
+  { src: faCss3Alt, text: "CSS3", category: "Frontend", level: "Advanced", priority: 6 },
+  { src: faCss3Alt, text: "Tailwind CSS", category: "Frontend", level: "Advanced", priority: 7 },
+  { src: faCube, text: "Framer Motion", category: "Frontend", level: "Intermediate", priority: 8 },
+  { src: faJs, text: "JavaScript", category: "Frontend", level: "Advanced", priority: 9 },
+  { src: faComments, text: "Chat UIs", category: "Frontend", level: "Advanced", priority: 10 },
+  
+  // ===== BACKEND DEVELOPMENT =====
+  { src: faNodeJs, text: "Node.js", category: "Backend", level: "Advanced", priority: 1 },
+  { src: faNode, text: "Express.js", category: "Backend", level: "Advanced", priority: 2 },
+  { src: faServer, text: "REST APIs", category: "Backend", level: "Advanced", priority: 3 },
+  { src: faLayerGroup, text: "Microservices", category: "Backend", level: "Advanced", priority: 4 },
+  { src: faCode, text: "API Development", category: "Backend", level: "Advanced", priority: 5 },
+  { src: faBolt, text: "Serverless", category: "Backend", level: "Advanced", priority: 6 },
+  { src: faWaveSquare, text: "WebSocket", category: "Backend", level: "Advanced", priority: 7 },
+  { src: faPlug, text: "Webhooks", category: "Backend", level: "Advanced", priority: 8 },
+  
+  // ===== AI & MACHINE LEARNING =====
+  { src: faBrain, text: "LLMs", category: "AI/ML", level: "Advanced", priority: 1 },
+  { src: faRobot, text: "OpenAI", category: "AI/ML", level: "Advanced", priority: 2 },
+  { src: faRobot, text: "Llama", category: "AI/ML", level: "Advanced", priority: 3 },
+  { src: faDatabase, text: "RAG", category: "AI/ML", level: "Advanced", priority: 4 },
+  { src: faBrain, text: "AI Agents", category: "AI/ML", level: "Advanced", priority: 5 },
+  { src: faCode, text: "Whisper ASR", category: "AI/ML", level: "Advanced", priority: 6 },
+  { src: faBrain, text: "ML", category: "AI/ML", level: "Intermediate", priority: 7 },
+  { src: faPython, text: "Python", category: "AI/ML", level: "Advanced", priority: 8 },
+  { src: faChartLine, text: "Data Analysis", category: "AI/ML", level: "Intermediate", priority: 9 },
+  
+  // ===== CLOUD & AWS =====
+  { src: faAws, text: "AWS", category: "Cloud", level: "Advanced", priority: 1 },
+  { src: faCloud, text: "AWS Lambda", category: "Cloud", level: "Advanced", priority: 2 },
+  { src: faCloud, text: "AWS S3", category: "Cloud", level: "Advanced", priority: 3 },
+  { src: faCloud, text: "AWS EC2", category: "Cloud", level: "Advanced", priority: 4 },
+  { src: faEnvelope, text: "AWS SES", category: "Cloud", level: "Advanced", priority: 5 },
+  { src: faCloud, text: "Vercel", category: "Cloud", level: "Intermediate", priority: 6 },
+  
+  // ===== DATABASES =====
+  { src: faDatabase, text: "MongoDB", category: "Database", level: "Advanced", priority: 1 },
+  { src: faDatabase, text: "PostgreSQL", category: "Database", level: "Advanced", priority: 2 },
+  { src: faDatabase, text: "Redis", category: "Database", level: "Advanced", priority: 3 },
+  { src: faDatabase, text: "Mongoose", category: "Database", level: "Advanced", priority: 4 },
+  { src: faCode, text: "Schema Design", category: "Database", level: "Advanced", priority: 5 },
+  
+  // ===== DEVOPS & TOOLS =====
+  { src: faDocker, text: "Docker", category: "DevOps", level: "Advanced", priority: 1 },
+  { src: faGit, text: "Git", category: "DevOps", level: "Advanced", priority: 2 },
+  { src: faGithub, text: "GitHub", category: "DevOps", level: "Advanced", priority: 3 },
+  { src: faGears, text: "CI/CD", category: "DevOps", level: "Intermediate", priority: 4 },
+  { src: faUbuntu, text: "Linux", category: "DevOps", level: "Intermediate", priority: 5 },
+  { src: faCode, text: "Postman", category: "DevOps", level: "Advanced", priority: 6 },
+  
+  // ===== AUTOMATION & WORKFLOW =====
+  { src: faCircleNodes, text: "n8n", category: "Automation", level: "Advanced", priority: 1 },
+  { src: faCog, text: "Appsmith", category: "Automation", level: "Advanced", priority: 2 },
+  { src: faBolt, text: "Automation Scripts", category: "Automation", level: "Advanced", priority: 3 },
+  { src: faWaveSquare, text: "Notifications", category: "Automation", level: "Advanced", priority: 4 },
+  
+  // ===== INTEGRATIONS & PAYMENTS =====
+  { src: faCreditCard, text: "Payment APIs", category: "Integrations", level: "Advanced", priority: 1 },
+  { src: faDollarSign, text: "Billing Workflows", category: "Integrations", level: "Advanced", priority: 2 },
+  { src: faPlug, text: "Odoo ERP", category: "Integrations", level: "Advanced", priority: 3 },
+  { src: faPlug, text: "API Integrations", category: "Integrations", level: "Advanced", priority: 4 },
+  
+  // ===== ARCHITECTURE & SECURITY =====
+  { src: faBoxesStacked, text: "Multi-tenant", category: "Architecture", level: "Advanced", priority: 1 },
+  { src: faShield, text: "OpenFGA", category: "Architecture", level: "Advanced", priority: 2 },
+  { src: faLock, text: "Authorization", category: "Architecture", level: "Advanced", priority: 3 },
+  { src: faProjectDiagram, text: "DDD", category: "Architecture", level: "Advanced", priority: 4 },
+  { src: faLayerGroup, text: "Modular Design", category: "Architecture", level: "Advanced", priority: 5 },
+  { src: faEye, text: "Observability", category: "Architecture", level: "Intermediate", priority: 6 },
+  
+  // ===== CORE COMPUTER SCIENCE =====
+  { src: faCog, text: "DSA", category: "Core CS", level: "Advanced", priority: 1 },
+  { src: faMicrochip, text: "Embedded Systems", category: "Core CS", level: "Intermediate", priority: 2 },
+  
+  // ===== PROJECT MANAGEMENT =====
+  { src: faPeopleGroup, text: "Agile", category: "Soft Skills", level: "Advanced", priority: 1 },
+  { src: faNpm, text: "NPM", category: "Tools", level: "Advanced", priority: 2 },
+  { src: faYarn, text: "Yarn", category: "Tools", level: "Advanced", priority: 3 },
+  { src: faFileExcel, text: "Excel", category: "Tools", level: "Intermediate", priority: 4 },
 ];
 
 export const SocialMedia = [
