@@ -4,6 +4,7 @@ import Link from "next/link";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink } from "@fortawesome/free-solid-svg-icons/faLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 interface InputData {
   image: string;
@@ -15,69 +16,85 @@ interface InputData {
 
 const ProjectCard = ({ image, git, text, deployed, title }: InputData) => {
   return (
-    <div
-      className="w-full h-full flex justify-center gap-8 p-8 px-12 shadow-lg border-2 border-gray-1200 rounded-md backdrop-brightness-110 max-md:flex-col max-md:w-11/12 max-sm:p-3 dark:border-[#64FFDA] dark:shadow-lg dark:shadow-cyan-500/30"
-      style={{ alignItems: "center" }}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      whileHover={{ y: -10 }}
+      transition={{ duration: 0.3 }}
+      className="w-full max-w-6xl mx-auto flex justify-center items-center gap-8 p-8 px-12 rounded-2xl backdrop-blur-xl bg-white/70 dark:bg-[#0E1B1B]/70 border border-gray-200/50 dark:border-[#64FFDA]/30 shadow-xl hover:shadow-2xl dark:shadow-cyan-500/20 dark:hover:shadow-cyan-500/40 max-md:flex-col max-md:items-center max-md:w-11/12 max-md:p-6 max-sm:p-5 max-sm:gap-6 transition-all duration-300 relative overflow-hidden group"
     >
-      <div className="w-7/12 h-full px-2 max-md:w-full">
-        <Image
-          height="400"
-          width="400"
-          src={image}
-          alt={title}
-          className="h-full w-full"
-        />
-      </div>
-      <div className="w-5/12 h-max text-center max-md:w-full">
-        <p className="font-bold">{title}</p>
-        <p>{text}</p>
-        <div className="flex justify-around mt-4 gap-8">
-          <div className="border border-gray-600 py-0 px-8 shadow-lg rounded-md cursor-pointer">
-            <Link  target="_blank" href={git}>
-              <FontAwesomeIcon icon={faGithub} className="h-5" />
-            </Link>
-          </div>
-          <div className="border border-gray-600 py-0 px-8 shadow-lg rounded-md cursor-pointer">
-            <Link  target="_blank" href={deployed}>
-              <FontAwesomeIcon icon={faLink} className="h-5" />
-            </Link>
-          </div>
+      {/* Animated gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#70BDAB]/10 to-[#3A9C84]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      
+      {/* Image Section */}
+      <motion.div
+        className="w-7/12 max-md:w-full relative z-10"
+        whileHover={{ scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <div className="relative overflow-hidden rounded-xl shadow-lg group/image w-full aspect-video">
+          <Image
+            height={400}
+            width={600}
+            src={image}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover/image:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover/image:opacity-100 transition-opacity duration-300"></div>
         </div>
-      </div>
-        {/* <div className="absolute right-8 top-0 z-[1]">
-          <svg
-            width="238"
-            height="431"
-            viewBox="0 0 280 531"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+      </motion.div>
+
+      {/* Content Section */}
+      <div className="w-5/12 max-md:w-full relative z-10 flex flex-col justify-center items-center text-center">
+        <motion.h3
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="font-bold text-2xl max-md:text-xl max-sm:text-lg mb-4 bg-gradient-to-r from-[#0E1B18] to-[#70BDAB] dark:from-white dark:to-[#70BDAB] bg-clip-text text-transparent"
+        >
+          {title}
+        </motion.h3>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="text-sm max-sm:text-xs leading-relaxed text-gray-700 dark:text-gray-300 mb-6 max-md:mb-5"
+        >
+          {text}
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="flex justify-center gap-4 max-sm:gap-3 w-full"
+        >
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: 5 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex-1 max-w-[140px] border-2 border-[#70BDAB] py-2.5 px-6 max-sm:px-4 max-sm:py-2 shadow-lg rounded-xl cursor-pointer bg-white/50 dark:bg-[#0E1B1B]/50 backdrop-blur-sm hover:bg-[#70BDAB] hover:text-white transition-all duration-300"
           >
-            <rect
-              opacity="0.3"
-              x="422.819"
-              y="-70.8145"
-              width="196"
-              height="541.607"
-              rx="2"
-              transform="rotate(51.2997 422.819 -70.8145)"
-              fill="url(#paint0_linear_83:2)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_83:2"
-                x1="517.152"
-                y1="-251.373"
-                x2="517.152"
-                y2="459.865"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#70BDAB" />
-                <stop offset="1" stopColor="#70BDAB" stopOpacity="0" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div> */}
-    </div>
+            <Link target="_blank" href={git} className="flex items-center justify-center gap-2">
+              <FontAwesomeIcon icon={faGithub} className="h-4 max-sm:h-3.5" />
+              <span className="text-sm max-sm:text-xs font-semibold">Code</span>
+            </Link>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ scale: 1.1, rotate: -5 }}
+            whileTap={{ scale: 0.95 }}
+            className="flex-1 max-w-[140px] border-2 border-[#3A9C84] py-2.5 px-6 max-sm:px-4 max-sm:py-2 shadow-lg rounded-xl cursor-pointer bg-white/50 dark:bg-[#0E1B1B]/50 backdrop-blur-sm hover:bg-[#3A9C84] hover:text-white transition-all duration-300"
+          >
+            <Link target="_blank" href={deployed} className="flex items-center justify-center gap-2">
+              <FontAwesomeIcon icon={faLink} className="h-4 max-sm:h-3.5" />
+              <span className="text-sm max-sm:text-xs font-semibold">Live</span>
+            </Link>
+          </motion.div>
+        </motion.div>
+      </div>
+    </motion.div>
   );
 };
 
