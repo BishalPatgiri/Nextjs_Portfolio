@@ -2,6 +2,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
 
 const ThemeToggler = () => {
   const { theme, setTheme } = useTheme();
@@ -14,10 +16,14 @@ const ThemeToggler = () => {
   if (!mounted) return null; // Prevents hydration mismatch
 
   return (
-    <button aria-label='theme toggler'
-    onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-    className="flex items-center justify-center text-black rounded-full cursor-pointer bg-gray-2 dark:bg-dark-bg h-9 w-9 dark:text-white md:h-14 md:w-14"
-    >
+   
+          <motion.button
+                whileHover={{ scale: 1.1, rotate: 180 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="w-10 h-10 max-sm:w-9 max-sm:h-9 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
+                aria-label="Toggle dark mode"
+              >
       <svg
         viewBox="0 0 23 23"
         className="w-5 h-5 stroke-current dark:hidden md:h-6 md:w-6"
@@ -47,8 +53,7 @@ const ThemeToggler = () => {
           mask="url(#path-1-inside-1_977:1934)"
         />
       </svg>
-    </button>
-  );
+</motion.button>  );
 };
 
 export default ThemeToggler;
